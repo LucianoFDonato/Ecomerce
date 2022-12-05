@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
     <title>Tienda online - Ecomerce </title>
 </head>
+
 <body>
-    
+    <main class="main-container">
+        <header class="header">
+            <img src="imagenes/menu.png" alt="menu icon">
+            <img src="imagenes/dom.png" alt="logo">
+
+            <nav class="navbar">
+                <ul class="navbar-items">
+                    <li><a href="" class="navbar-link">Collections</a></li>
+                    <li><a href="" class="navbar-link">Men</a></li>
+                    <li><a href="" class="navbar-link">Woman</a></li>
+                    <li><a href="" class="navbar-link">About</a></li>
+                    <li><a href="" class="navbar-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!---Inicio modal navbar--->
+            <div class="modal-navbar_background">
+                <nav class="modal-navbar">
+                    <img src="imagenes/cancel.png" alt="" class="modal-navbar-close-icon">
+                    <nav class="modal-navbar">
+                        <ul class="modal-navbar-items">
+                            <li><a href="" class="modal-navbar-link">Collections</a></li>
+                            <li><a href="" class="modal-navbar-link">Men</a></li>
+                            <li><a href="" class="modal-navbar-link">Woman</a></li>
+                            <li><a href="" class="modal-navbar-link">About</a></li>
+                            <li><a href="" class="modal-navbar-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </nav>
+            </div>
+
+
+            <!---Final modal navbar--->
+            <div class="header-cart-avatar">
+                <div class="header-cart">
+                    <div class="header-cart--notification">3</div>
+                    <img src="imagenes/carrito.png" alt="shop-car">
+                </div>
+                <img src="imagenes/usuario.png" alt="avatar">
+            </div>
+        </header>
+
+        <section class="content">
+            <article class="gallery">
+                <div class="gallery-image-content">
+                    <img class="gallery-previous" src="imagenes/previous.png" alt="">
+                    <img class="gallery-next" src="imagenes/next.png" alt="">
+                </div>
+                <div class="gallery-thumnails">
+                    <img class="thumnails" src="imagenes/gafas.png" alt="">
+                    <img class="thumnails" src="imagenes/gafas2.png" alt="">
+                    <img class="thumnails" src="imagenes/gafas3.png" alt="">
+                    <img class="thumnails" src="imagenes/gafas4.png" alt=""> 
+                </div>
+            </article>
+
+            <article class="details">
+                <h2 class="details-company">Gafas company</h2>
+                <h2 class="details tittle">Ediciones limitadas para todos</h2>
+                <p class="details description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa dicta odit saepe quasi est eligendi debitis repellat excepturi, itaque accusamus?</p>
+
+            </article>
+        </section>
+
+    </main>
+
+
+
+
 </body>
+
 </html>
