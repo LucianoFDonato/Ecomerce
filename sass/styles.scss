@@ -1,4 +1,18 @@
 @use 'initial';
+@use 'variables';
+@use 'header';
+@use 'navbar';
+@use 'modal-navbar';
 
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+.main__container{
+    width: 375px;
+    border: 1px solid black;
+    margin: auto;
+    @media (min-width: 1115px){
+            width: 1115px;
+    }
+}
+
+
+
 
