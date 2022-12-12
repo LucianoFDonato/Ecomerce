@@ -36,7 +36,7 @@ img {
 .header__navigation {
   width: 175px;
   height: 100%;
-  border: 1px solid red;
+  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,11 +54,52 @@ img {
     display: none;
   }
 }
-.navbar {
+.header__cart-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70px;
+}
+@media (min-width: 1115px) {
+  .header__cart-avatar {
+    width: 125px;
+  }
+}
+.header__cart {
+  position: relative;
+}
+.header__cart--notification {
   display: none;
+  background-color: hsl(26deg, 100%, 55%);
+  width: 15px;
+  height: 15px;
+  border-radius: 16px;
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  font-size: 0.6em;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+.header__cart:hover {
+  cursor: pointer;
+}
+.header__avatar {
+  width: 24px;
+}
+@media (min-width: 1115px) {
+  .header__avatar {
+    width: 48px;
+    height: 100%;
+  }
+}
+.header__avatar:hover {
+  cursor: pointer;
+  border: 2px solid hsl(26deg, 100%, 55%);
+  border-radius: 50%;
 }
 
-.modal__navbar-background {
+.navbar {
   display: none;
 }
 
