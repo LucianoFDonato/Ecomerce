@@ -18,18 +18,18 @@
             <div class="header__navigation">
                 <img class="header__menu" src="imagenes/menu.png" alt="menu icon">
                 <img class="header__logo" src="imagenes/lentes.png" alt="logo">
+
+
+                <nav class="navbar">
+                    <ul class="navbar__items">
+                        <li><a href="" class="navbar__link">Collections</a></li>
+                        <li><a href="" class="navbar__link">Men</a></li>
+                        <li><a href="" class="navbar__link">Woman</a></li>
+                        <li><a href="" class="navbar__link">About</a></li>
+                        <li><a href="" class="navbar__link">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-
-            <nav class="navbar">
-                <ul class="navbar__items">
-                    <li><a href="" class="navbar__link">Collections</a></li>
-                    <li><a href="" class="navbar__link">Men</a></li>
-                    <li><a href="" class="navbar__link">Woman</a></li>
-                    <li><a href="" class="navbar__link">About</a></li>
-                    <li><a href="" class="navbar__link">Contact</a></li>
-                </ul>
-            </nav>
-
             <!---Inicio modal navbar--->
             <div class="modal-navbar__background">
                 <nav class="modal-navbar">
@@ -59,7 +59,7 @@
 
         <section class="content">
             <article class="gallery">
-                <div class="gallery__image_content">
+                <div class="gallery__image-container">
                     <img class="gallery__previous" src="imagenes/previous.png" alt="">
                     <img class="gallery__next" src="imagenes/next.png" alt="">
                 </div>
@@ -112,28 +112,29 @@
         </div>
         <!---Final cart modal--->
 
-        <!--- inicio gallery modal--->
-        <div class="modal-gallery__background">
-            <article class="modal-gallery">
-                <img src="imagenes/cross.png" alt="close" class="modal-gallery_close">
-                <div class="modal-gallery__image_content">
-                    <img class="modal-gallery__previous" src="imagenes/previous.png" alt="">
-                    <img class="modal-gallery__next" src="imagenes/next.png" alt="">
-                </div>
-                <div class="modal-gallery__thumnails">
-                    <img id="m1" class="modal-gallery__thumnails" src="imagenes/gafas.png" alt="">
-                    <img id="m2" class="modal-gallery__thumnails" src="imagenes/gafas2.png" alt="">
-                    <img id="m3" class="modal-gallery__thumnails" src="imagenes/gafas3.png" alt="">
-                    <img id="m4" class="modal-gallery__thumnails" src="imagenes/gafas4.png" alt="">
-                </div>
-            </article>
-        </div>
-        <!---Final gallery modal--->
+
     </main>
     <footer class="attribution">
         Page and Code by <a href="https://www.linkedin.com/in/luciano-f-donato-59b834222/" target="_blank"><img
                 src="imagenes/copyright.png" alt="copyright">Luciano F. Donato</a>
     </footer>
+    <!--- inicio gallery modal--->
+    <div class="modal-gallery__background">
+        <article class="modal-gallery">
+            <img src="imagenes/cross.png" alt="close" class="modal-gallery_close">
+            <div class="modal-gallery__image_content">
+                <img class="modal-gallery__previous" src="imagenes/previous.png" alt="">
+                <img class="modal-gallery__next" src="imagenes/next.png" alt="">
+            </div>
+            <div class="modal-gallery__thumnails">
+                <img id="m1" class="modal-gallery__thumnails" src="imagenes/gafas.png" alt="">
+                <img id="m2" class="modal-gallery__thumnails" src="imagenes/gafas2.png" alt="">
+                <img id="m3" class="modal-gallery__thumnails" src="imagenes/gafas3.png" alt="">
+                <img id="m4" class="modal-gallery__thumnails" src="imagenes/gafas4.png" alt="">
+            </div>
+        </article>
+    </div>
+    <!---Final gallery modal--->
 
 </body>
 
