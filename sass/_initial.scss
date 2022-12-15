@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as v;
 
 *{
     margin: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: variables.$Font;
+    font-family: v.$Font;
 }
 
 img{

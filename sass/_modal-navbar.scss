@@ -1,17 +1,16 @@
-@use 'variables';
+@use 'variables' as v;
 @use 'mixins';
 
 .modal-navbar{
     &__background{
         @include mixins.modal-background;
     }
-    background-color: variables.$White;
+    background-color: v.$White;
     width: 250px;
     height: 100%;
     padding: 28px 24px;
-    //display: none;
+    display: none;
     &__items{
-        border: 1px solid red;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -21,7 +20,7 @@
     }
     &__link{
         text-decoration: none;
-        color: variables.$Very-vark-blue;
+        color: v.$Very-vark-blue;
         font-weight: 700;
         font-size: 1.1em;
     }

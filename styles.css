@@ -128,6 +128,7 @@ img {
   width: 250px;
   height: 100%;
   padding: 28px 24px;
+  display: none;
 }
 .modal-navbar__background {
   background-color: hsla(0deg, 0%, 0%, 0.5);
@@ -136,10 +137,10 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
   display: none;
 }
 .modal-navbar__items {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -196,6 +197,58 @@ img {
   .gallery__thumnails {
     display: block;
   }
+}
+
+.details {
+  padding: 24px;
+}
+.details__company {
+  color: hsl(26deg, 100%, 55%);
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+.details__tittle {
+  font-size: 1.7em;
+  margin-bottom: 16px;
+}
+.details__description {
+  font-size: 0.94em;
+  color: hsl(219deg, 9%, 45%);
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.details__prices {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  align-items: center;
+}
+.details__now {
+  font-size: 1.8em;
+  font-weight: 700;
+  border: 1px solid 0;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.details__discount {
+  font-size: 0.8em;
+  background-color: hsl(25deg, 100%, 94%);
+  color: hsl(26deg, 100%, 55%);
+  padding: 4px;
+  border: 4px;
+}
+.details__before {
+  font-weight: 700;
+  color: hsl(219deg, 9%, 45%);
+  text-decoration: line-through;
+}
+
+.input {
+  border: 1px solid black;
 }
 
 .main__container {

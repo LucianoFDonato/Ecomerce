@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as v;
 
 .header{
     border: 1px solid black;
@@ -9,7 +9,7 @@
     padding: 0 24px;
     @media (min-width: 1115px){
         height: 112px;
-        border-bottom: 1px solid variables.$Grayish-blue;
+        border-bottom: 1px solid v.$Grayish-blue;
     }   
     &__navigation{
         width: 175px;
@@ -42,7 +42,7 @@
         position: relative;
         &--notification{
             display: none;
-            background-color: variables.$Orange;
+            background-color: v.$Orange;
             width: 15px;
             height: 15px;
             border-radius: 16px;
@@ -51,7 +51,7 @@
             right: -5px;
             font-size: 0.6em;
             text-align: center;
-            color: variables.$White;
+            color: v.$White;
         }            
         &:hover{
             cursor: pointer;
@@ -65,7 +65,7 @@
         }
         &:hover{
             cursor: pointer;
-            border: 2px solid variables.$Orange;
+            border: 2px solid v.$Orange;
             border-radius: 50%;
         }
     }

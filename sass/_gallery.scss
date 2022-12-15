@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as v;
 
 
 .gallery{
@@ -10,7 +10,7 @@
        
     }
     &__previous{
-        background-color: variables.$White;
+        background-color: v.$White;
         width: 40px;
         height: 40px;
         padding: 9px;
@@ -23,7 +23,7 @@
         }
     }
     &__next{
-        background-color: variables.$White;
+        background-color: v.$White;
         width: 40px;
         height: 40px;
         padding: 9px;
