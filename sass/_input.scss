@@ -3,4 +3,14 @@
 
 .input{
     border: 1px solid black;
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    &__minus{
+        @include mixins.minus-mas;
+    }
+    &__mas{
+        @include mixins.minus-mas;
+    }
+
 }
