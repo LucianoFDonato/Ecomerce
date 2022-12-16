@@ -1,16 +1,24 @@
-@use 'variables';
+@use 'variables' as v;
 @use 'mixins';
 
 .input{
-    border: 1px solid black;
     height: 57px;
     display: flex;
     justify-content: space-between;
+    background-color: v.$Light-grayish-blue;
     &__minus{
-        @include mixins.minus-mas;
+        @include mixins.changeNumber;
+    }
+    &__number{
+        width: 100%;
+        border: none;
+        background-color: v.$Light-grayish-blue;
+        font-size: 1.2em;
+        font-weight: 700;
+        text-align: center;
+        outline: none;
     }
     &__mas{
-        @include mixins.minus-mas;
+        @include mixins.changeNumber;
     }
-
 }

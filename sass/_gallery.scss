@@ -5,9 +5,13 @@
     &__image-container{
         height: 300px;
         width: 100%;
-        background-image: url(../imagenes/producto.png);
+        background-image: url(../imagenes/gafas2.png);
         background-size: cover;
-       
+        background-position-y: -50px;
+        @media (min-width: 1115px){
+            background-image: url(../imagenes/producto.png);
+            background-position-y: -260px ;
+        }
     }
     &__previous{
         background-color: v.$White;

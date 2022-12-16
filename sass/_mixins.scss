@@ -1,4 +1,4 @@
-@use 'variables'as v;
+@use 'variables' as v;
 
 @mixin modal-background {
    background-color: v.$Black-modal;
@@ -10,11 +10,32 @@
    z-index: 1;
    display: none;
 }
-@mixin minus-mas {
+@mixin changeNumber {
    width: 25px;
-   border: 1px solid;
    height: 100%;
    //display: grid;
    //place-content: center;
    padding: 19px 5px;
+   &:hover{
+      cursor: pointer;
+   }
+}
+@mixin button{
+   width: 100%;
+   height: 57px;
+   border-radius: 8px;
+   background-color: v.$Orange;
+   color: v.$White;
+   border: none;
+   font-size: 0.9em;
+   font-weight: 700;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 16px;
+   &:hover{
+      cursor: pointer;
+      opacity: 0.5;
+   }
+
 }
