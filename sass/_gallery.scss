@@ -8,10 +8,6 @@
         background-image: url(../imagenes/gafas2.png);
         background-size: cover;
         background-position-y: -50px;
-        @media (min-width: 1115px){
-            background-image: url(../imagenes/producto.png);
-            background-position-y: -260px ;
-        }
     }
     &__previous{
         background-color: v.$White;
@@ -24,6 +20,9 @@
         left: 15px;
         &:hover {
            cursor: pointer;
+        }
+        @media (min-width: 1115px){
+            display: none;
         }
     }
     &__next{
@@ -38,11 +37,33 @@
         &:hover {
            cursor: pointer;
         }
+        @media (min-width: 1115px){
+            display: none;
+        }
     }
     &__thumnails{
         display: none;
         @media (min-width: 1115px){
-            display: block;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .thumnails{
+        width: 90px;
+        height: 90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid v.$Orange;
+        }
+    }
+    @media (min-width: 1115px){
+        width: 446px;
+        &__image-container{
+            background-position-y: 0;
+            border-radius: 16px;
+            height: 446px;
+            margin-bottom: 32px;
         }
     }
 }
