@@ -1,7 +1,6 @@
 @use 'variables' as v;
 
 .header{
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,13 +42,13 @@
         &--notification{
             display: none;
             background-color: v.$Orange;
-            width: 15px;
-            height: 15px;
+            width: 12px;
+            height: 12px;
             border-radius: 16px;
             position: absolute;
             top: -2px;
             right: -5px;
-            font-size: 0.6em;
+            font-size: 0.5em;
             text-align: center;
             color: v.$White;
         }            

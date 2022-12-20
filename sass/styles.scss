@@ -23,6 +23,15 @@
     @media (min-width: 1115px){
         display: flex;
         padding: 90px 50px;
-        gap: 124px;
+        gap: 124px;        
+    }
+}
+.attribution{
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    &__copyright{
+        width: 10px;
+        height: 10px;
     }
 }
