@@ -89,7 +89,7 @@ function drawProductInModal() {
     productConteiner.innerHTML = `
         <div class="cart-modal__checkout-container">
                     <div class="cart-modal__details-container">
-                        <img class="cart-modal__image" src="imagenes/gafas.png" alt="">
+                        <img class="cart-modal__image" src="imagenes/gafas1.jpg" alt="">
                         <div>
                             <p class="cart-modal__product">Autumn limited edition</p>
                             <p class="cart-modal__price">$125.00 x0 <span>$.00</span></p>

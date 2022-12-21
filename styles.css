@@ -371,6 +371,7 @@ img {
   width: 50px;
   height: 40px;
   border-radius: 4px;
+  display: block;
 }
 .cart-modal__price span {
   color: hsl(0deg, 0%, 0%);
@@ -425,7 +426,7 @@ img {
   content: url(../imagenes/borrar.png);
 }
 .modal-gallery__image_conteiner {
-  background-image: url(../imagenes/gafas2.png);
+  background-image: url(../imagenes/gafas1.jpg);
   height: 446px;
   background-size: cover;
   border-radius: 16px;
