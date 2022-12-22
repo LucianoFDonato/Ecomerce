@@ -85,7 +85,11 @@ previousBtn.addEventListener('click', ()=>{
 })
 
 // Mostrar el modal de imagenes cuando click en la imagen principal.
+const modalImage = document.querySelector('.modal-gallery__background');
 
+imageContainer.addEventListener('click', ()=>{
+    modalImage.style.display = "grid";
+})
 
 
 // Funciones.

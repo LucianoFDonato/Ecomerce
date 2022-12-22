@@ -2,6 +2,7 @@
 
 
 .gallery{
+    
     &__image-container{
         height: 300px;
         width: 100%;
@@ -9,6 +10,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: -50px;
+        cursor: pointer;
     }
     &__previous{
         background-color: v.$White;
