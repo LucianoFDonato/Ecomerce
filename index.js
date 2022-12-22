@@ -68,10 +68,10 @@ const previousBtn = document.querySelector('.gallery__previous');
 const nextBtn = document.querySelector('.gallery__next');
 let imgIndex = 1;
 const imageUrls = [
-    '../imagenes/gafas1.jpg',
-    '../imagenes/gafas2.jpg',
-    '../imagenes/gafas3.jpg',
-    '../imagenes/gafas4.jpg',
+    'imagenes/gafas1.jpg',
+    'imagenes/gafas2.jpg',
+    'imagenes/gafas3.jpg',
+    'imagenes/gafas4.jpg',
 ]
 
 nextBtn.addEventListener('click', ()=>{
@@ -105,15 +105,15 @@ function drawProductInModal() {
 
 function changeNextImage(imgContainer){
     if(imgIndex == 4){
-        imgIndex = 0;
+        imgIndex = 1;
     }
     imgIndex++;
-    imgContainer.style.backgroundImage = `url('../imagenes/gafas${imgIndex}.jpg')`
+    imgContainer.style.backgroundImage = `url('imagenes/gafas${imgIndex}.jpg')`
 }
 function changePreviousImage(imgContainer){
-    if(imgIndex == 0){
+    if(imgIndex == 1){
         imgIndex = 4;
     }
     imgIndex--;
-    imgContainer.style.backgroundImage = `url('../imagenes/gafas${imgIndex}.jpg')`
+    imgContainer.style.backgroundImage = `url('imagenes/gafas${imgIndex}.jpg')`
 }
