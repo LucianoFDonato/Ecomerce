@@ -46,7 +46,10 @@ cartIconBtn.addEventListener('click', () => {
     cartModal.classList.toggle('show');
 
     if (lastValue == 0) {
+        productConteiner.innerHTML = '<p class="cart-empty">Your cart is empty</p>';
+    }else{
         drawProductInModal();
+
     }
 })
 
@@ -81,6 +84,8 @@ previousBtn.addEventListener('click', ()=>{
     changePreviousImage(imageContainer);
 })
 
+// Mostrar el modal de imagenes cuando click en la imagen principal.
+
 
 
 // Funciones.
@@ -105,15 +110,16 @@ function drawProductInModal() {
 
 function changeNextImage(imgContainer){
     if(imgIndex == 4){
-        imgIndex = 1;
+        imgIndex = 0;
     }
     imgIndex++;
     imgContainer.style.backgroundImage = `url('imagenes/gafas${imgIndex}.jpg')`
 }
 function changePreviousImage(imgContainer){
     if(imgIndex == 1){
-        imgIndex = 4;
+        imgIndex = 5;
     }
     imgIndex--;
     imgContainer.style.backgroundImage = `url('imagenes/gafas${imgIndex}.jpg')`
 }
+

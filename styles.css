@@ -150,7 +150,7 @@ img {
 .gallery__image-container {
   height: 300px;
   width: 100%;
-  background-image: url(../imagenes/gafas1.jpg);
+  background-image: url("imagenes/gafas1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -50px;
@@ -423,10 +423,10 @@ img {
 }
 .modal-gallery__close:hover {
   cursor: pointer;
-  content: url(../imagenes/borrar.png);
+  content: url('imagenes/borrar.png');
 }
 .modal-gallery__image_conteiner {
-  background-image: url(../imagenes/gafas1.jpg);
+  background-image: url('imagenes/gafas1.jpg');
   height: 446px;
   background-size: cover;
   border-radius: 16px;
