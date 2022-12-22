@@ -122,11 +122,15 @@ img {
   }
 }
 
-.modal-navbar {
-  background-color: hsl(0deg, 0%, 100%);
+.modal-navbar__background {
   width: 250px;
-  height: 100%;
-  padding: 28px 24px;
+  height: 990px;
+  background-color: hsl(0deg, 0%, 100%);
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  padding: 5px;
+  z-index: 1;
   display: none;
 }
 .modal-navbar__items {
@@ -410,7 +414,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
   display: none;
   place-content: center;
 }

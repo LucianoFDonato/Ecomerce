@@ -1,16 +1,22 @@
-@use 'variables' as v;
+@use 'variables'as v;
 @use 'mixins';
 
-.modal-navbar{
-    &__background{
-        //@include mixins.modal-background;
+.modal-navbar {
+    
+    &__background {
+        width: 250px;
+        height: 990px;
+        background-color: v.$White;
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        padding: 5px;
+        z-index: 1;
+        display: none;
     }
-    background-color: v.$White;
-    width: 250px;
-    height: 100%;
-    padding: 28px 24px;
-    display: none;
-    &__items{
+       
+
+    &__items {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -18,13 +24,15 @@
         list-style: none;
         margin-top: 50px;
     }
-    &__link{
+
+    &__link {
         text-decoration: none;
         color: v.$Very-vark-blue;
         font-weight: 700;
         font-size: 1.1em;
     }
-    &__close-icon:hover{
+
+    &__close-icon:hover {
         cursor: pointer;
     }
 }
