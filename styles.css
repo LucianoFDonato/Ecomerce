@@ -14,7 +14,7 @@ img {
   height: 20px;
 }
 
-.thumnails {
+.thumbnails {
   width: 150px;
   height: 150px;
 }
@@ -192,21 +192,21 @@ img {
     display: none;
   }
 }
-.gallery__thumnails {
+.gallery__thumbnails {
   display: none;
 }
 @media (min-width: 1115px) {
-  .gallery__thumnails {
+  .gallery__thumbnails {
     display: flex;
     justify-content: space-between;
   }
 }
-.gallery .thumnails {
+.gallery .thumbnail {
   width: 90px;
   height: 90px;
   border-radius: 16px;
 }
-.gallery .thumnails:hover {
+.gallery .thumbnail:hover {
   cursor: pointer;
   border: 2px solid hsl(26deg, 100%, 55%);
 }
@@ -426,25 +426,25 @@ img {
   content: url(../imagenes/borrar.png);
 }
 .modal-gallery__image_conteiner {
-  background-image: url(../imagenes/gafas1.jpg);
+  background-image: url(imagenes/gafas1.jpg);
   height: 446px;
   background-size: cover;
   border-radius: 16px;
   margin-bottom: 32px;
   position: relative;
 }
-.modal-gallery__thumnails {
+.modal-gallery__thumbnails {
   display: flex;
   justify-content: space-between;
   width: 450px;
   margin: auto;
 }
-.modal-gallery .modal-gallery__thumnail {
+.modal-gallery .modal-gallery__thumbnail {
   width: 90px;
   height: 90px;
   border-radius: 16px;
 }
-.modal-gallery .modal-gallery__thumnail:hover {
+.modal-gallery .modal-gallery__thumbnail:hover {
   cursor: pointer;
   border: 2px solid hsl(26deg, 100%, 55%);
 }

@@ -44,14 +44,14 @@
             display: none;
         }
     }
-    &__thumnails{
+    &__thumbnails{
         display: none;
         @media (min-width: 1115px){
             display: flex;
             justify-content: space-between;
         }
     }
-    .thumnails{
+    .thumbnail{
         width: 90px;
         height: 90px;
         border-radius: 16px;

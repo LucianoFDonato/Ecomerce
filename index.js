@@ -86,10 +86,53 @@ previousBtn.addEventListener('click', ()=>{
 
 // Mostrar el modal de imagenes cuando click en la imagen principal.
 const modalImage = document.querySelector('.modal-gallery__background');
+const closeModalBtn = document.querySelector('.modal-gallery__close');
 
 imageContainer.addEventListener('click', ()=>{
     modalImage.style.display = "grid";
 })
+
+closeModalBtn.addEventListener('click', ()=>{
+    modalImage.style.display = "none";    
+})
+
+// Cambiar las imagenes principales.
+let thumbnails = document.querySelectorAll('.gallery__thumbnails');
+
+thumbnails = [...thumbnails]
+
+thumbnails.forEach(thumbnail => {
+   thumbnail.addEventListener('click', event=>{
+        console.log(event.target.id)
+        imageContainer.style.backgroundImage = `url('imagenes/gafas${event.target.id}.jpg')`
+   })
+})
+
+// Cambiar las imagenes principales en el modal.
+let thumbnailsModal = document.querySelectorAll('.modal-gallery__thumbnail');
+const modalImageContainer = document.querySelector('.modal-gallery__image_conteiner');
+
+thumbnailsModal = [...thumbnailsModal]
+
+thumbnailsModal.forEach(thumbnail =>{
+    thumbnail.addEventListener('click', event=>{
+        console.log(event.target.id.slice(-1))
+        modalImageContainer.style.backgroundImage = `url('imagenes/gafas${event.target.id.slice(-1)}.jpg')`
+    })
+})
+
+// Cambiar imagenes del modal con las flechas.
+const previousModalBtn = document.querySelector('.modal-gallery__previous');
+const nextModalBtn = document.querySelector('.modal-gallery__next');
+
+nextModalBtn.addEventListener('click', ()=>{
+    changeNextImage(modalImageContainer);
+})
+previousModalBtn.addEventListener('click', ()=>{
+    changePreviousImage(modalImageContainer);
+})
+
+
 
 
 // Funciones.

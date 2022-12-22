@@ -4,11 +4,9 @@
 .modal-gallery {
     width: 550px;
     
-
     &__background {
         @include mixins.modal-background;
         display: none;
-        
         place-content: center;
         
     }
@@ -28,7 +26,7 @@
     }
 
     &__image_conteiner {
-        background-image: url(../imagenes/gafas1.jpg);
+        background-image: url(imagenes/gafas1.jpg);
         height: 446px;
         background-size: cover;
         border-radius: 16px;
@@ -37,7 +35,7 @@
         
     }
 
-    &__thumnails {
+    &__thumbnails {
         display: flex;
         justify-content: space-between;
         width: 450px;
@@ -45,7 +43,7 @@
         
     }
 
-    .modal-gallery__thumnail {
+    .modal-gallery__thumbnail {
         width: 90px;
         height: 90px;
         border-radius: 16px;
