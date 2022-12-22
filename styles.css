@@ -426,7 +426,7 @@ img {
 }
 .modal-gallery__close:hover {
   cursor: pointer;
-  content: url(../imagenes/borrar.png);
+  content: url(imagenes/borrar.png);
 }
 .modal-gallery__image_conteiner {
   background-image: url(imagenes/gafas1.jpg);
