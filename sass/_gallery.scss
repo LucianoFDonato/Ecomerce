@@ -2,7 +2,16 @@
 
 
 .gallery{
-    
+    &__button{
+        display: none;
+        @media(min-width: 1115px){
+            width: 26px;
+            height: 26px;
+            display: flex;
+            background-color: v.$White;
+            border-radius: 50%;
+        }
+    }
     &__image-container{
         height: 300px;
         width: 100%;
@@ -36,7 +45,7 @@
         border-radius: 50%;
         position: absolute;
         top: 170px;
-        left: 340px;
+        left: 370px;
         &:hover {
            cursor: pointer;
         }

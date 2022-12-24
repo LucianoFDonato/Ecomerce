@@ -67,6 +67,7 @@ function deleteProduct() {
 
 // Cambiar imagenes al tocar btn flecha.
 const imageContainer = document.querySelector('.gallery__image-container');
+const buttonGallery = document.querySelector('.gallery__button');
 const previousBtn = document.querySelector('.gallery__previous');
 const nextBtn = document.querySelector('.gallery__next');
 let imgIndex = 1;
@@ -84,11 +85,11 @@ previousBtn.addEventListener('click', ()=>{
     changePreviousImage(imageContainer);
 })
 
-// Mostrar el modal de imagenes cuando click en la imagen principal.
+// Mostrar el modal de imagenes cuando hago el click en la imagen principal.
 const modalImage = document.querySelector('.modal-gallery__background');
 const closeModalBtn = document.querySelector('.modal-gallery__close');
 
-imageContainer.addEventListener('click', ()=>{
+buttonGallery.addEventListener('click', ()=>{
     modalImage.style.display = "grid";
 })
 

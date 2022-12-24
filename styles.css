@@ -151,6 +151,18 @@ img {
   cursor: pointer;
 }
 
+.gallery__button {
+  display: none;
+}
+@media (min-width: 1115px) {
+  .gallery__button {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    background-color: hsl(0deg, 0%, 100%);
+    border-radius: 50%;
+  }
+}
 .gallery__image-container {
   height: 300px;
   width: 100%;
@@ -186,7 +198,7 @@ img {
   border-radius: 50%;
   position: absolute;
   top: 170px;
-  left: 340px;
+  left: 370px;
 }
 .gallery__next:hover {
   cursor: pointer;
